@@ -17,22 +17,21 @@
             <table class="table table-striped">
               <tr>
                 <td>ID</td>
-                <td>1</td>
+                <td>{{ $student->id }}</td>
               </tr>
               <tr>
                 <td>Name</td>
-                <td>Fardeen</td>
+                <td>{{ $student->name }}</td>
               </tr>
               <tr>
                 <td>Email</td>
-                <td>fardeen@gmail.com</td>
+                <td>{{ $student->email }}</td>
               </tr>
               <tr>
                 <td>Class</td>
-                <td>5</td>
+                <td>{{ $student->class }}</td>
               </tr>
             </table>
-
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@
                 <td>{{ $single_data->email}}</td>
                 <td>{{ $single_data->class}}</td>
                 <td>
-                  <a href="#" class="btn btn-info">View</a>
+                  <a href="{{ route('home.show',$single_data->id) }}" class="btn btn-info">View</a>
                 </td>
               </tr>
               @endforeach
