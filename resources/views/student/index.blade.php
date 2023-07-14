@@ -22,15 +22,17 @@
                 <td>Class</td>
                 <td>Manage</td>
               </tr>
+              @foreach ($data as $single_data)
               <tr>
-                <td>1</td>
-                <td>Fardeen</td>
-                <td>fardeen@gmail.com</td>
-                <td>5</td>
+                <td>{{ $single_data->id}}</td>
+                <td>{{ $single_data->name}}</td>
+                <td>{{ $single_data->email}}</td>
+                <td>{{ $single_data->class}}</td>
                 <td>
                   <a href="#" class="btn btn-info">View</a>
                 </td>
               </tr>
+              @endforeach
             </table>
           </div>
         </div>
